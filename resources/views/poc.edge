@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SmartEdg &mdash; Blockchain powered access-control</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:card" content="">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<style>
+		@charset "UTF-8";@font-face{font-family:'Work Sans';font-style:normal;font-weight:300;src:local('Work Sans Light'),local('WorkSans-Light'),url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh314L8mNhI.ttf) format('truetype')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;src:local('Work Sans'),local('WorkSans-Regular'),url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:700;src:local('Work Sans Bold'),local('WorkSans-Bold'),url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh3x4X8mNhI.ttf) format('truetype')}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav{display:block}a{background-color:transparent}img{border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857;color:#333;background-color:#fff}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}h2,h4{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h2{margin-top:20px;margin-bottom:10px}h4{margin-top:10px;margin-bottom:10px}h2{font-size:30px}h4{font-size:18px}.text-center{text-align:center}ul{margin-top:0;margin-bottom:10px}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.row:after,.row:before{content:" ";display:table}.row:after{clear:both}.col-md-10,.col-md-12,.col-md-4,.col-md-6{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width:992px){.col-md-10,.col-md-12,.col-md-4,.col-md-6{float:left}.col-md-4{width:33.33333%}.col-md-6{width:50%}.col-md-10{width:83.33333%}.col-md-12{width:100%}.col-md-pull-4{right:33.33333%}.col-md-push-8{left:66.66667%}.col-md-offset-1{margin-left:8.33333%}.col-md-offset-3{margin-left:25%}}.collapse{display:none}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav:after,.nav:before{content:" ";display:table}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:70px;margin-bottom:20px;border:1px solid transparent}.navbar:after,.navbar:before{content:" ";display:table}.navbar:after{clear:both}@media (min-width:768px){.navbar{border-radius:4px}}.navbar-header:after,.navbar-header:before{content:" ";display:table}.navbar-header:after{clear:both}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{content:" ";display:table}.navbar-collapse:after{clear:both}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}}.navbar-brand{float:left;padding:25px 15px;font-size:18px;line-height:20px;height:70px}.navbar-nav{margin:12.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:25px;padding-bottom:25px}}@media (min-width:768px){.navbar-right{float:right!important;margin-right:-15px}}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.navbar-default .navbar-brand{color:#777}.navbar-default .navbar-nav>li>a{color:#777}.navbar-default .navbar-collapse{border-color:#e7e7e7}@-ms-viewport{width:device-width}@font-face{font-family:DINOT-Bold;src:url(/fonts/DINOT-Bold.eot);src:local('☺'),url(/fonts/DINOT-Bold.woff) format('woff'),url(/fonts/DINOT-Bold.ttf) format('truetype'),url(/fonts/DINOT-Bold.svg) format('svg');font-weight:400;font-style:normal}body{font-family:DINOT-Bold,Arial,sans-serif;font-weight:400;font-size:17px;line-height:1.8;color:#777;color:#7f7f7f;background:#fff;height:100%;position:relative;width:102%}a{color:#4ae3b5}h2,h4{color:#000;font-weight:400}h2{font-size:42px;line-height:52px;font-weight:700;font-style:normal;font-stretch:normal;line-height:1.24;letter-spacing:-1px;color:#3d4d65}h4{font-size:26px}::-webkit-selection{color:#818892;background:#f9f6f0}#fh5co-header{position:absolute;z-index:99;width:100%;opacity:1;top:0;margin-top:20px}@media screen and (max-width:768px){#fh5co-header{margin-top:0;background:#fff;-webkit-box-shadow:0 0 9px 0 rgba(0,0,0,.1);-moz-box-shadow:0 0 9px 0 rgba(0,0,0,.1);-ms-box-shadow:0 0 9px 0 rgba(0,0,0,.1);box-shadow:0 0 9px 0 rgba(0,0,0,.1)}#fh5co-header .navbar-brand{color:#4ae3b5!important}#fh5co-header #navbar li a{color:rgba(0,0,0,.5)!important}#fh5co-header #navbar li a span:before{background:0 0!important}}#fh5co-header .navbar{padding-bottom:0;margin-bottom:0}#fh5co-header #navbar li a{font-family:"Work Sans",Arial,sans-serif;color:rgba(255,255,255,.5);position:relative}#fh5co-header #navbar li a span{position:relative;display:block;padding-bottom:2px}#fh5co-header #navbar li a span:before{content:"";position:absolute;width:100%;height:2px;bottom:0;left:0;background-color:#4ae3b5;visibility:hidden;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);-o-transform:scaleX(0);transform:scaleX(0)}#fh5co-header .navbar-brand{float:left;display:block;font-size:30px;font-weight:400;padding-left:0;color:#fff}#fh5co-header .navbar-brand span{color:#4ae3b5}#fh5co-header .navbar-default{border:transparent;background:0 0;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;border-radius:0}@media screen and (max-width:768px){#fh5co-header .navbar-default{margin-top:0;padding-right:0;padding-left:0}}body{overflow-x:hidden}.section-heading{float:left;width:100%;padding-bottom:50px;margin-bottom:50px;clear:both}.section-heading h2{font-size:40px;font-weight:700;color:#fff;position:relative;display:block;padding-bottom:0;line-height:1.5;font-family:DINOT-Bold,Arial,sans-serif}.section-heading h2:after{content:"";position:absolute;display:block;width:80px;height:2px;background:#4ae3b5;left:50%;margin-left:-40px;bottom:0;display:none}@media screen and (max-width:768px){.section-heading h2{font-size:30px}}#fh5co-our-services{background:url(images/header.jpg);background-repeat:no-repeat;background-size:cover}.fh5co-nav-toggle{width:25px;height:25px;text-decoration:none}.fh5co-nav-toggle i{position:relative;display:-moz-inline-stack;display:inline-block;zoom:1;width:25px;height:3px;color:#4ae3b5;font:bold 14px/.4 Helvetica;text-transform:uppercase;text-indent:-55px;background:#4ae3b5}.fh5co-nav-toggle i::after,.fh5co-nav-toggle i::before{content:'';width:25px;height:3px;background:#4ae3b5;position:absolute;left:0}.fh5co-nav-toggle i::before{top:-7px}.fh5co-nav-toggle i::after{bottom:-7px}.fh5co-nav-toggle{position:absolute;top:12px;right:0;z-index:21;padding:6px 0 0 0;display:block;margin:0 auto;display:none;height:44px;width:44px;border-bottom:none!important}@media screen and (max-width:768px){.fh5co-nav-toggle{display:block}}.top-150{padding-top:150px}.top-100{padding-top:100px}h4.hero-subtitle{color:#fff;font-size:18px;line-height:28px;text-align:center}.img-responsive{width:519px!important;height:683px!important}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700" rel="stylesheet" type="text/css"></noscript>
+
+	<!-- Animate.css -->
+	<link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
+	<!-- Icomoon Icon Fonts-->
+	<link rel="preload" href="css/icomoon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/icomoon.css"></noscript>
+	<!-- Simple Line Icons -->
+	<link rel="preload" href="css/simple-line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/simple-line-icons.css"></noscript>
+	<!-- Owl Carousel -->
+	<link rel="preload" href="css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owl.carousel.min.css"></noscript>
+	<link rel="preload" href="css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/owl.theme.default.min.css"></noscript>
+	<!-- Bootstrap  -->
+	<link rel="preload" href="css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/bootstrap.css"></noscript>
+
+
+	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
+	<script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		          	<a class="navbar-brand" href="/">SmartEdg<span>.</span></a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li><a href="/"><span>About</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>POC</span></a></li>
+		            <li><a href="#" data-nav-section=""><span>White Paper</span></a></li>
+		            <!-- <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+		            <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li> -->
+
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+	<div id="fh5co-our-services" data-section="services">
+		<div class="container">
+			<div class="row top-150 animate-box">
+				<div class="col-md-12 section-heading text-center">
+					<h2>Safe and secure package delivery.</h2>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<h4 class="hero-subtitle">
+								Never worry about how you receive your packages again.  Hook up your
+								smart devices and allow delivery drivers to securely enter your garage.
+							</h4>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-12 col-md-offset-3">
+
+			<img src="images/iPhone-top.png" alt="Safe and secure package delivery" class="img-responsive">
+			</div>
+</div>
+
+	</div>
+
+	<div id="fh5co-tour" data-section="tour">
+
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4 col-md-push-8 animate-box top-100" data-animate-effect="fadeInRight">
+						<img src="https://cdn.zeplin.io/5af3ad0b3645d6cf660a82a4/assets/E4B3B4F8-C1E7-429B-AF10-DC6283B23F65.png" alt="Sign up and connect your smart lock" class="img-responsive">
+					</div>
+					<div class="col-md-6 col-md-pull-4 top-150">
+						<img src="https://cdn.zeplin.io/5af3ad0b3645d6cf660a82a4/assets/CF02BDF3-D12C-4947-9965-015F32402CF8.png" height="100px">
+						<h2>Sign up and Connect your Smart Lock</h2>
+						<p>
+							Once you sign up you can pair your smart garage lock system with our application.
+							Just scan your device QR code and we'll do the rest.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row darker">
+				<div class="col-md-10 col-md-offset-1 top-100">
+					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft" style="">
+						<img src="images/iPhone2.jpg" alt="Pick and choose which companies get access" class="img-responsive">
+					</div>
+					<div class="col-md-5 col-md-push-3 is-right top-150">
+						<img src="https://cdn.zeplin.io/5af3ad0b3645d6cf660a82a4/assets/1E278258-6B6E-4994-8953-FB890C8C16A5.png" height="100px">
+						<h2>Pick and choose which companies get access</h2>
+						<p>
+							We work with nearly every delivery company to make sure the right
+							companies get access.  Just select the one's you want from our list.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4 col-md-push-8 animate-box top-100" data-animate-effect="fadeInRight">
+						<img src="images/iPhone3.jpg" alt="Dont worry about being home for important deliveries" class="img-responsive">
+					</div>
+					<div class="col-md-6 col-md-pull-4 top-150">
+						<img src="https://cdn.zeplin.io/5af3ad0b3645d6cf660a82a4/assets/510D484D-5453-42DC-9426-585A7FEAFBF9.png" height="100px">
+						<h2>Don't worry about being home for important deliveries</h2>
+						<p>
+							You can always have the peace of mind that your packages are safe
+							within your garage away from rain, snow or theft.  You'll be
+							notified with push notifications when your delivery is dropped off.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row darker">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-4 animate-box top-100" data-animate-effect="fadeInLeft">
+						<img src="images/iPhone4.jpg" alt="Delivery drivers use a one time QR code to unlock your garage and drop off your package" class="img-responsive">
+					</div>
+					<div class="col-md-6 col-md-push-2 is-right top-150">
+						<img src="images/point4.jpg" height="100px">
+						<h2>Delivery drivers use a one time QR code to unlock your garage and drop off your package.</h2>
+						<p>
+							Delivery drivers receive a unique code every time they deliver a package.  You'll receive push
+							notifications about their request and when the package is secure.
+						</p>
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+
+
+
+<!--
+	<div id="fh5co-features" data-section="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="animate-box" data-animate-effect="fadeIn">Features</h2>
+					<div class="row animate-box" data-animate-effect="fadeIn">
+						<div class="col-md-8 col-md-offset-2">
+							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-present"></i></div>
+					<div class="fh5co-desc">
+						<h3>100% Free</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-eye"></i></div>
+					<div class="fh5co-desc">
+						<h3>Retina Ready</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-crop"></i></div>
+					<div class="fh5co-desc">
+						<h3>Fully Responsive</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-speedometer"></i></div>
+					<div class="fh5co-desc">
+						<h3>Lightweight</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-heart"></i></div>
+					<div class="fh5co-desc">
+						<h3>Made with Love</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-icon"><i class="icon-umbrella"></i></div>
+					<div class="fh5co-desc">
+						<h3>Eco Friendly</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="animate-box" data-animate-effect="fadeIn">Happy Clients Says...</h2>
+					<div class="row animate-box" data-animate-effect="fadeIn">
+						<div class="col-md-8 col-md-offset-2 subtext">
+							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony animate-box" data-animate-effect="fadeIn">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony animate-box" data-animate-effect="fadeIn">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony animate-box" data-animate-effect="fadeIn">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-pricing" data-section="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="animate-box" data-animate-effect="fadeIn">Pricing</h2>
+					<div class="row animate-box" data-animate-effect="fadeIn">
+						<div class="col-md-8 col-md-offset-2 subtext">
+							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box animate-box" data-animate-effect="fadeIn">
+						<h2 class="pricing-plan">Starter</h2>
+						<div class="price"><sup class="currency">$</sup>7<small>/mo</small></div>
+						<p>Basic customer support for small business</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>10 projects</li>
+							<li>20 Pages</li>
+							<li>20 Emails</li>
+							<li>100 Images</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">Get started</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box animate-box" data-animate-effect="fadeIn">
+						<h2 class="pricing-plan">Regular</h2>
+						<div class="price"><sup class="currency">$</sup>19<small>/mo</small></div>
+						<p>Basic customer support for small business</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>15 projects</li>
+							<li>40 Pages</li>
+							<li>40 Emails</li>
+							<li>200 Images</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">Get started</a>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeIn">
+					<div class="price-box popular">
+						<div class="popular-text">Best value</div>
+						<h2 class="pricing-plan">Plus</h2>
+						<div class="price"><sup class="currency">$</sup>79<small>/mo</small></div>
+						<p>Basic customer support for small business</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>Unlimitted projects</li>
+							<li>100 Pages</li>
+							<li>100 Emails</li>
+							<li>700 Images</li>
+						</ul>
+						<a href="#" class="btn btn-primary btn-sm">Get started</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="price-box animate-box" data-animate-effect="fadeIn">
+						<h2 class="pricing-plan">Enterprise</h2>
+						<div class="price"><sup class="currency">$</sup>125<small>/mo</small></div>
+						<p>Basic customer support for small business</p>
+						<hr>
+						<ul class="pricing-info">
+							<li>Unlimitted projects</li>
+							<li>Unlimitted Pages</li>
+							<li>Unlimitted Emails</li>
+							<li>Unlimitted Images</li>
+						</ul>
+						<a href="#" class="btn btn-default btn-sm">Get started</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div> -->
+
+	<div class="fh5co-cta" style="background-image:url(images/cta-footer.jpg)">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h3>The delivery application will make sure you have the peace of mind you need for the things you order. </h3>
+				<p><a href="#" class="btn btn-outline btn-lg app-button"></a>   <a href="#" class="btn play-button btn-outline btn-lg"></a></p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- <footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2015 Free Website Template<a href="index.html">Ranger</a>. All Rights Reserved. <br> Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-youtube"></i></a></li>
+						<li><a href="#"><i class="icon-pinterest"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
