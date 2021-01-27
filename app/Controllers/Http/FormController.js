@@ -8,13 +8,12 @@ class FormController {
   async postForm ({ request, response, view }) {
 
     const formInfo = request.all()
-    console.log(formInfo)
 
     await Mail.send('emails.formInfo', {
       formInfo
     }, (message) => {
       message
-      .to(toMail)
+      .to(formInfo.email)
       .from(fromMail)
       .subject('Submitted demo request form')
     })
